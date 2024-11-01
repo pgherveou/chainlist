@@ -176,6 +176,8 @@ const privacyStatement = {
     "Usage Data is collected automatically when using the Service.Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.https://www.buildbear.io/privacy-policy",
   BlockRazor:
     "Privacy notice: BlockRazor RPC does not track any kind of user information (i.e. IP, location, etc.). Only information that is public on the blockchain are preserved, such as timestamp of a transaction. For more information please visit: https://blockrazor.gitbook.io/blockrazor/scutum-mev-protect-rpc#privacy-statement",
+  parity:
+    "Privacy notice: Parity RPC does not track any kind of user information (i.e. IP, location, etc.). Only information that is public on the blockchain are preserved, such as timestamp of a transaction. For more information please visit: https://parity.io/privacy",
 };
 
 export const extraRpcs = {
@@ -6018,6 +6020,15 @@ export const extraRpcs = {
   50104: {
     rpcs: [
       "https://rpc.sophon.xyz",
+    ],
+  },
+  420420421: {
+    rpcs: [
+      {
+        url: "https://eth-rpc.parity-testnet.parity.io",
+        tracking: "limited",
+        trackingDetails: privacyStatement.parity,
+      }
     ],
   }
 };
