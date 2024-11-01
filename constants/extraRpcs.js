@@ -6026,7 +6026,7 @@ export const extraRpcs = {
     rpcs: [
       {
         url: "https://eth-rpc.parity-testnet.parity.io",
-        tracking: "none",
+        tracking: "limited",
         trackingDetails: privacyStatement.parity,
       }
     ],
